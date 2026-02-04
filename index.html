@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Rugby Monteporreiro 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, .nav-font {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+        .rugby-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-slate-900 text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-rugby-ball text-3xl text-yellow-500"></i>
+                    <span class="text-2xl font-bold tracking-wider">RUGBY MONTEPORREIRO</span>
+                </div>
+                <div class="hidden md:flex space-x-8 nav-font">
+                    <a href="#inicio" class="hover:text-yellow-500 transition">Inicio</a>
+                    <a href="#horarios" class="hover:text-yellow-500 transition">Horarios</a>
+                    <a href="#premios" class="hover:text-yellow-500 transition">Premios</a>
+                    <a href="#tienda" class="hover:text-yellow-500 transition">Tienda</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white text-2xl"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 px-4 py-4 space-y-4">
+            <a href="#inicio" class="block">Inicio</a>
+            <a href="#horarios" class="block">Horarios</a>
+            <a href="#premios" class="block">Premios</a>
+            <a href="#tienda" class="block">Tienda</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-slate-900 flex items-center justify-center">
+            <!-- Placeholder for a real background image -->
+            <div class="text-gray-700 opacity-20 text-9xl"><i class="fa-solid fa-rugby-ball"></i></div>
+        </div>
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        <div class="relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-8xl font-bold mb-4 tracking-tighter">GRAN TORNEO DE RUGBY</h1>
+            <p class="text-2xl md:text-3xl mb-8 text-yellow-500 font-light italic">14 y 15 de Marzo, 2025</p>
+            <div class="flex flex-col items-center">
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-lg border border-white/20">
+                    <i class="fa-solid fa-location-dot text-yellow-500 mb-2 text-2xl"></i>
+                    <p class="text-xl font-bold">Monteporreiro, Pontevedra</p>
+                    <p class="text-sm opacity-80">Campo de Rugby Municipal</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Horarios -->
+    <section id="horarios" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 underline decoration-yellow-500 decoration-4 underline-offset-8">Cronograma del Torneo</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Sábado 14 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-blue-800">
+                    <div class="bg-blue-800 text-white p-4 text-center">
+                        <h3 class="text-2xl font-bold italic">Sábado 14 de Marzo</h3>
+                        <p>Fase de Grupos</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b pb-2"><span>09:00 - Ceremonia de Apertura</span> <span class="font-bold text-blue-700">Inauguración</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>10:30 - Pontevedra RC vs Vigo Wolves</span> <span class="bg-gray-200 px-2 rounded">Grupo A</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>12:00 - Santiago Lions vs Coruña Bears</span> <span class="bg-gray-200 px-2 rounded">Grupo B</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>14:00 - Descanso / Almuerzo</span> <span class="italic text-gray-400">Pausa</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>16:30 - Los Titanes vs Minho Pirates</span> <span class="bg-gray-200 px-2 rounded">Grupo A</span></li>
+                            <li class="flex justify-between"><span>18:00 - All Stars Gz vs Thunder RFC</span> <span class="bg-gray-200 px-2 rounded">Grupo B</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Domingo 15 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-t-4 border-yellow-500">
+                    <div class="bg-yellow-500 text-slate-900 p-4 text-center">
+                        <h3 class="text-2xl font-bold italic">Domingo 15 de Marzo</h3>
+                        <p>Fases Finales</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b pb-2"><span>10:00 - Primera Semifinal</span> <span class="font-bold">S1</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>11:30 - Segunda Semifinal</span> <span class="font-bold">S2</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>13:30 - Final Consolación (3º/4º)</span> <span class="font-bold text-orange-600">Bronce</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>15:00 - Tercer Tiempo Popular</span> <span class="italic text-gray-400">Comida</span></li>
+                            <li class="flex justify-between border-b pb-2"><span>17:00 - GRAN FINAL</span> <span class="bg-yellow-100 text-yellow-700 px-2 rounded font-bold">ORO</span></li>
+                            <li class="flex justify-between"><span>18:30 - Entrega de Premios</span> <span class="font-bold">Podio</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premios -->
+    <section id="premios" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Premios del Torneo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Segundo -->
+                <div class="order-2 md:order-1 bg-slate-800 p-8 rounded-2xl border-b-8 border-slate-400 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-400 rounded-full flex items-center justify-center text-3xl mb-4 text-slate-900 font-bold">2</div>
+                    <h3 class="text-2xl font-bold mb-2">Subcampeón</h3>
+                    <p class="text-5xl font-bold text-slate-400">300€</p>
+                    <p class="mt-4 opacity-60">Trofeo de Plata + Medallas</p>
+                </div>
+                <!-- Primero -->
+                <div class="order-1 md:order-2 bg-slate-800 p-8 rounded-2xl border-b-8 border-yellow-500 transform md:-translate-y-6 flex flex-col items-center shadow-2xl">
+                    <i class="fa-solid fa-trophy text-6xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-3xl font-bold mb-2">Campeón</h3>
+                    <p class="text-6xl font-bold text-yellow-500">400€</p>
+                    <p class="mt-4 opacity-80">Copa de Oro + Kit Equipación</p>
+                </div>
+                <!-- Tercero -->
+                <div class="order-3 md:order-3 bg-slate-800 p-8 rounded-2xl border-b-8 border-orange-700 flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-700 rounded-full flex items-center justify-center text-3xl mb-4 text-white font-bold">3</div>
+                    <h3 class="text-2xl font-bold mb-2">Tercer Puesto</h3>
+                    <p class="text-5xl font-bold text-orange-700">200€</p>
+                    <p class="mt-4 opacity-60">Trofeo de Bronce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tienda -->
+    <section id="tienda" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Tienda Oficial</h2>
+            <p class="text-center text-gray-500 mb-16 italic">Equípate para la gran cita en Monteporreiro</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Camiseta -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center relative">
+                        <i class="fa-solid fa-shirt text-6xl text-gray-400"></i>
+                        <span class="absolute top-4 right-4 bg-yellow-500 px-3 py-1 rounded text-sm font-bold">NUEVO</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 uppercase">Camiseta Torneo 2025</h3>
+                        <p class="text-gray-600 text-sm mb-4">Tejido técnico transpirable de alta resistencia. Logo bordado.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-800">25.00€</span>
+                            <button onclick="alert('Añadido al carrito')" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-slate-900 transition">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sudadera -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center relative">
+                        <!-- Representación visual -->
+                        <div class="w-32 h-32 bg-slate-700 rounded-lg flex flex-col items-center justify-center text-white">
+                            <i class="fa-solid fa-vest text-4xl mb-1"></i>
+                            <span class="text-[10px] font-bold">HOODIE</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 uppercase">Sudadera Elite</h3>
+                        <p class="text-gray-600 text-sm mb-4">Con capucha y forro térmico. Ideal para los entrenamientos fríos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-800">45.00€</span>
+                            <button onclick="alert('Añadido al carrito')" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-slate-900 transition">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visera -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fa-solid fa-hat-cowboy-side text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 uppercase">Visera Oficial</h3>
+                        <p class="text-gray-600 text-sm mb-4">Ajustable y con protección UV. Disponible en color azul marino.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-800">15.00€</span>
+                            <button onclick="alert('Añadido al carrito')" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-slate-900 transition">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa/Ubicación Footer -->
+    <section class="py-12 bg-gray-200">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">¿Cómo llegar?</h2>
+                <p class="mb-2"><i class="fa-solid fa-map-pin mr-2 text-blue-800"></i> Campo de Rugby de Monteporreiro, 36162 Pontevedra</p>
+                <p class="text-gray-600">Fácil acceso por la carretera de circunvalación. Parking gratuito habilitado para asistentes.</p>
+            </div>
+            <div class="md:w-1/2 w-full h-48 bg-gray-400 rounded-2xl flex items-center justify-center text-gray-600 italic">
+                [Mapa Interactivo de Pontevedra]
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-slate-900 text-white py-8 text-center">
+        <p class="text-sm opacity-50">&copy; 2025 Torneo Rugby Monteporreiro | Organizado por el Club de Rugby Local</p>
+    </footer>
+
+    <script>
+        // Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
